@@ -4,17 +4,17 @@ const car = {
     model: "Camry",
     year: 2023
 };
-// console.log(car)
-// console.log(car.year) ///output is 2023
-// console.log(car["make"]);
+console.log(car)
+console.log(car.year) ///output is 2023
+console.log(car["make"]);
 
 // updating the object
 car.year = 2025
-// console.log(car)
+console.log(car)
 
 //adding a new key in the object
 car.color = "red"
-// console.log(car)
+console.log(car)
 
 //deleting the object
 delete car.color
@@ -33,8 +33,8 @@ const persone = {
     },
 }
 
-// console.log(persone.name, persone.address.city)
-// console.log(persone.details)
+console.log(persone.name, persone.address.city)
+console.log(persone.details)
 
 
 //using the this in object
@@ -45,7 +45,7 @@ const person = {
         console.log("Hello, " + this.name + ' and Email is :' + this.email);
     }
 };
-// console.log(person.greet())
+console.log(person.greet())
 
 //using the object in the array
 const books = [
@@ -65,18 +65,18 @@ console.log(books[1].author, books[1].title)
 function adding() {
     let num1 = 10;
     let num2 = 12;
-    // console.log("adding the elements :", num1 + num2)
+    console.log("adding the elements :", num1 + num2)
 };
 adding()
 
 //Parameters vs Arguments
 function greet(name) {
-    //console.log("Hello, " + name);
+    console.log("Hello, " + name);
 }
 greet("World");
 
 function personDetails(name, email) {
-    //console.log(`The data of the user is : name is ${name} and the email is ${email}`)
+    console.log(`The data of the user is : name is ${name} and the email is ${email}`)
 }
 //personDetails('karan', "karan12@gmail.com")
 
@@ -87,46 +87,46 @@ function personDataRetrun(name, email) {
 }
 
 let user1 = personDataRetrun('Asif', "asif43@gmail.com")
-//console.log(user1)
+console.log(user1)
 let user2 = personDataRetrun('Alam', "Alam638@gmail.com")
-//console.log(user2)
+console.log(user2)
 
 //arrow function
 let addingArrow = (name) => {
     return name
 };
 
-//console.log(addingArrow("khan"))
+console.log(addingArrow("khan"))
 
 let shortArrow = (name) => name;
-// console.log('arif')
+ console.log('arif')
 
 //loops
 
 for (let i = 0; i <= 10; i++) {
-    // console.log('the value of the i is :', i)
+    console.log('the value of the i is :', i)
 }
 
 //for loop using on Array
 let color = ['red', 'green', 'yellow']
 for (let i = 0; i <= color.length; i++) {
-    // console.log(`The name of the color is ${color[i]} and the index number is: ${i}`)
+    console.log(`The name of the color is ${color[i]} and the index number is: ${i}`)
 }
 
 
 //while loop
-// let count = 0;
-// while (count <= 2) {
-//     // console.log('count is : ', count); // 0, 1
-//     // count++;
-// }
+let count = 0;
+ while (count <= 2) {
+    console.log('count is : ', count); // 0, 1
+    count++;
+}
 
 //do while loop
-// let i = 0;
-// do {
-//     console.log(i); // 0
-//     i++;
-// } while (i < 0);
+ let i = 0;
+ do {
+     console.log(i); // 0
+     i++;
+ } while (i < 0);
 
 const products = [
     { name: "Laptop", price: 1200 },
@@ -140,6 +140,7 @@ for (let j = 0; j < products.length; j++) {
 // Laptop: $1200
 // Mouse: $25
 // Keyboard: $75
+
 
 
 
